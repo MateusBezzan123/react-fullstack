@@ -10,7 +10,6 @@ router.get("/byId/:id", async (req, res) => {
 })
 
 
-
 router.get("/", async (req, res) => {
     const listOfPosts = await Posts.findAll()
     res.json(listOfPosts)
